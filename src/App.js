@@ -2,6 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Coin from './components/Coin/Coin';
+import AccountBalance from './components/AccountBalance/AccountBalance';
+import styled from 'styled-components';
+
+const TitleDetails = styled.th`
+    border: 2px solid burlywood;
+    width: 25vh;
+    background-color: black;
+    color: white;
+`;
  
 function App() {
   return (
@@ -16,12 +25,14 @@ function App() {
         </p>
       </header>
 
+      <AccountBalance amount = {10000} />
+
       <table className = "coin-table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Ticker</th>
-            <th>Price</th>
+            <TitleDetails>Name</TitleDetails>
+            <TitleDetails>Ticker</TitleDetails>
+            <TitleDetails>Price</TitleDetails>
           </tr>
         </thead>
         <tbody>
