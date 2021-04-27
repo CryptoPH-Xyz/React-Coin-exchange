@@ -1,17 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Coin from './components/Coin/Coin';
 import AccountBalance from './components/AccountBalance/AccountBalance';
+import CoinList from './components/CoinList/CoinList';
+import AppHeader from './components/AppHeader/AppHeader';
 import styled from 'styled-components';
 
-const TitleDetails = styled.th`
-    border: 2px solid burlywood;
-    width: 25vh;
-    background-color: black;
-    color: white;
+const Div = styled.div`
+  text-align: center;
+  background-color: lightblue;
 `;
- 
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      balance: 10000,
+      coinData: [
+        {
+          name: 'Bitcoin',
+          ticker: 'BTC',
+          price: 60000
+        },
+        {
+          name: 'Ethereum',
+          ticker: 'ETH',
+          price: 2500
+        },
+        {
+          name: 'Cardano',
+          ticker: 'ADA',
+          price: 1.5
+        },
+        {
+          name: 'Binance',
+          ticker: 'BNB',
+          price: 600
+        }
+      ]
+    }
+  }
+
+  render () {
+    return (
+      <Div className="App">
+        <AppHeader />
+        <AccountBalance amount = {this.state.balance} />
+        <CoinList coinData={this.state.coinData} /> 
+      </Div>
+    );
+  }
+}
+
+/*
 function App() {
   return (
     <div className="App">
@@ -45,5 +84,6 @@ function App() {
     </div>
   );
 }
+*/
 
 export default App;

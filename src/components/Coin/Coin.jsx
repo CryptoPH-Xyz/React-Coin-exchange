@@ -8,6 +8,7 @@ const RowDetails = styled.td`
     background-color: white;
 `;
 
+
 export default class Coin extends Component {
     constructor(props) {
         super(props);
