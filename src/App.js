@@ -65,6 +65,7 @@ class App extends React.Component {
 
   render () {
     return (
+      <>
       <Div className="App">
         <AppHeader />
         <AccountBalance amount = {this.state.balance} 
@@ -76,6 +77,7 @@ class App extends React.Component {
           showBalance={this.state.showBalance}
         /> 
       </Div>
+      </>
     );
   }
 }
@@ -115,5 +117,7 @@ function App() {
   );
 }
 */
+
+
 
 export default App;

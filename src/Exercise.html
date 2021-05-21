@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Fetching API</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <table id="Coins20">
+        <tr>
+            <td>Rank</td>
+            <td>Name</td>
+            <td>Ticker</td>
+            <td>New Coin</td>
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function(){
+            fetch("https://api.coinpaprika.com/v1/coins")
+            .then(response => response.json() )
+            .then(coins => {
+                for(let i = 0; i < 20; i++){
+                    let coin = coins[i];
+                    $('#Coins20').append(
+                        `<tr>
+                        <td>${coin.rank}</td>
+                        <td>${coin.name}</td>
+                        <td>${coin.symbol}</td>
+                        <td>${coin.is_new}</td>
+                        </tr>`
+                    )
+                }
+            });
+        })
+    </script>    
+</body>
+</html>
