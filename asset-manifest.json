@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/coin-exchange/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/coin-exchange/static/js/main.3737258b.chunk.js",
-    "main.js.map": "/coin-exchange/static/js/main.3737258b.chunk.js.map",
-    "runtime-main.js": "/coin-exchange/static/js/runtime-main.9b91d9e8.js",
-    "runtime-main.js.map": "/coin-exchange/static/js/runtime-main.9b91d9e8.js.map",
-    "static/js/2.4b3c5c10.chunk.js": "/coin-exchange/static/js/2.4b3c5c10.chunk.js",
-    "static/js/2.4b3c5c10.chunk.js.map": "/coin-exchange/static/js/2.4b3c5c10.chunk.js.map",
-    "static/js/3.09a24437.chunk.js": "/coin-exchange/static/js/3.09a24437.chunk.js",
-    "static/js/3.09a24437.chunk.js.map": "/coin-exchange/static/js/3.09a24437.chunk.js.map",
-    "index.html": "/coin-exchange/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/coin-exchange/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.4b3c5c10.chunk.js.LICENSE.txt": "/coin-exchange/static/js/2.4b3c5c10.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/coin-exchange/static/media/logo.6ce24c58.svg"
+    "main.css": "/react-coin-exchange/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/react-coin-exchange/static/js/main.3737258b.chunk.js",
+    "main.js.map": "/react-coin-exchange/static/js/main.3737258b.chunk.js.map",
+    "runtime-main.js": "/react-coin-exchange/static/js/runtime-main.0aab8c54.js",
+    "runtime-main.js.map": "/react-coin-exchange/static/js/runtime-main.0aab8c54.js.map",
+    "static/js/2.48290007.chunk.js": "/react-coin-exchange/static/js/2.48290007.chunk.js",
+    "static/js/2.48290007.chunk.js.map": "/react-coin-exchange/static/js/2.48290007.chunk.js.map",
+    "static/js/3.09a24437.chunk.js": "/react-coin-exchange/static/js/3.09a24437.chunk.js",
+    "static/js/3.09a24437.chunk.js.map": "/react-coin-exchange/static/js/3.09a24437.chunk.js.map",
+    "index.html": "/react-coin-exchange/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/react-coin-exchange/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.48290007.chunk.js.LICENSE.txt": "/react-coin-exchange/static/js/2.48290007.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-coin-exchange/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9b91d9e8.js",
-    "static/js/2.4b3c5c10.chunk.js",
+    "static/js/runtime-main.0aab8c54.js",
+    "static/js/2.48290007.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
     "static/js/main.3737258b.chunk.js"
   ]
