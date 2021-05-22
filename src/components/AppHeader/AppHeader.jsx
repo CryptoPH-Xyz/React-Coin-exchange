@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import styled from 'styled-components';
 
@@ -29,18 +29,16 @@ const Image = styled.img`
     pointer-events: none;
 `;
 
-export default class AppHeader extends Component {
-    render() {
-        return (
-            <Header>
-            <Image src={logo} alt="React logo" />
-            <H1>
-              Coin Exchange
-            </H1>
-            <P className = "App-subtitle">
-              by: Xyz Fiegalan
-            </P>
-          </Header>
-        );
-    }
+export default function Appheader() {
+    return (
+        <Header>
+        <Image src={logo} alt="React logo" />
+        <H1>
+            Coin Exchange
+        </H1>
+        <P className = "App-subtitle">
+            by: Xyz Fiegalan
+        </P>
+        </Header>
+    );
 }

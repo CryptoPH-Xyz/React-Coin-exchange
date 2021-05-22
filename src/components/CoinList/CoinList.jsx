@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Coin from '../Coin/Coin';
 import styled from 'styled-components';
 
@@ -15,35 +15,33 @@ const Table = styled.table`
     font-size: 1.5rem;
 `;
 
-export default class CoinList extends Component {
-    render() {
-        return (
-            <Table>
-            <thead>
-                <tr>
-                <TitleDetails>Name</TitleDetails>
-                <TitleDetails>Ticker</TitleDetails>
-                <TitleDetails>Price</TitleDetails>
-                {this.props.showBalance ?
-                    <TitleDetails>Balance</TitleDetails> : null}
-                <TitleDetails>Actions</TitleDetails>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                this.props.coinData.map(({key, name, ticker, price, balance}) =>
-                    <Coin key={key}
-                    handleRefresh = {this.props.handleRefresh} 
-                    name={name} 
-                    ticker={ticker} 
-                    price={price}
-                    balance = {balance}
-                    showBalance={this.props.showBalance}
-                    />
-                    )
-                }
-            </tbody>
-            </Table>
-        )
-    }
+export default function CoinList(props) {
+    return (
+        <Table>
+        <thead>
+            <tr>
+            <TitleDetails>Name</TitleDetails>
+            <TitleDetails>Ticker</TitleDetails>
+            <TitleDetails>Price</TitleDetails>
+            {props.showBalance ?
+                <TitleDetails>Balance</TitleDetails> : null}
+            <TitleDetails>Actions</TitleDetails>
+            </tr>
+        </thead>
+        <tbody>
+            {
+            props.coinData.map(({key, name, ticker, price, balance}) =>
+                <Coin key={key}
+                handleRefresh = {props.handleRefresh} 
+                name={name} 
+                ticker={ticker} 
+                price={price}
+                balance = {balance}
+                showBalance={props.showBalance}
+                />
+                )
+            }
+        </tbody>
+        </Table>
+    )
 }
